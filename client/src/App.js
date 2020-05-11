@@ -14,9 +14,9 @@ function App() {
       <Header />
       <div className="container">
         <Balance />
-        <IncomeAndExpenses />
-        <TransactionList />
+        <IncomeAndExpenses />  
         <AddTransaction />
+        <TransactionList />
       </div>
     </GlobalProvider>
   );
