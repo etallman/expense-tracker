@@ -13,7 +13,7 @@ exports.getTransactions = async (req, res, next) => {
      return res.status(200).json({
        success: true,
        count: transactions.length,
-       data: transactions,
+       data: transactions
      });
   } catch (err) {
     return res.status(500).json({
@@ -29,7 +29,7 @@ exports.getTransactions = async (req, res, next) => {
 // // @access        Public
 // //*
 exports.addTransaction = async (req, res, next) => {
-  res.send('Post')
+
   try {
     const { text, amount } = req.body;
     console.log(req.body);
@@ -49,7 +49,7 @@ exports.addTransaction = async (req, res, next) => {
     } else {
       return res.status(500).json({
         success: false,
-        error: "Transaction cannot be created at this time",
+        error: "Transaction cannot be created at this time"
       });
     }
   }
@@ -57,7 +57,7 @@ exports.addTransaction = async (req, res, next) => {
 
 // //*
 // // @description   Delete transaction
-// // @route         DELETE /api/v1/transactions
+// // @route         DELETE /api/v1/transactions/:id
 // // @access        Public
 // //*
 exports.deleteTransaction = async (req, res, next) => {

@@ -1,25 +1,38 @@
 # Expense Tracker
-Fullstack expense tracker
+Fullstack expense tracker (using hooks)
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Installing
 
-Prerequisites
-What things you need to install the software and how to install them
+    npm install               // Install backend dependencies
+    cd client npm install     // Install frontend dependencies
+    cd ..                     // Return to root
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+## Running Servers/Dev Environment
+### Frontend and Backend
+    npm run dev
 
-Say what the step will be
+### Backend Only
+    npm run server
 
+### Frontend Only
+    npm run client
+
+## Running Prod
+### Build Client
+    cd client
+    npm run build
+
+### Start Prod
+    npm start
 
 ## Built With
-React
-Node.js
-Express
-MongoDB
-Mongoose
+### Frontend
+* React
+### Backend
+* Node.js
+* Express
+* MongoDB
+* Mongoose
 
 
 ## Authors
